@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMzIgMzIiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0xNiAyYTE0IDE0IDAgMSAwIDE0IDE0QTE0IDE0IDAgMCAwIDE2IDJaTTkgMTYuNDFMNy41OSAxNWwyLTJsLTItMkw5IDkuNTlsMiAybDItMkwxNC40MSAxMWwtMiAybDIgMkwxMyAxNi40MWwtMi0yWk0xNiAyNWEzIDMgMCAxIDEgMy0zYTMgMyAwIDAgMS0zIDNabTguNDEtMTBMMjMgMTYuNDFsLTItMmwtMiAyTDE3LjU5IDE1bDItMmwtMi0yTDE5IDkuNTlsMiAybDItMkwyNC40MSAxMWwtMiAyWiIvPjwvc3ZnPg==" type="image/x-icon">
+    <title>Ahorcadito</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Ahorcadito :)</h1>
+
+        <div class="lives-content">
+            <p id="lives"></p>
+        </div>
+        
+        <div class="secret">
+            <p id="arraySecret"></p>
+        </div>
+
+
+        <div class="letter">
+            <label for="text"> Letra: </label>
+            <input type="text" autofocus name="text" id="letter-input" maxlength="1" onkeydown="if(event.key==='Enter'){document.querySelector('.letter-btn').click();}">
+            <div class="letter-btn">
+                <span>Intentar</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

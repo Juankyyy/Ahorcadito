@@ -12,20 +12,47 @@
     <div class="content">
         <h1>Ahorcadito :)</h1>
 
-        <div class="lives-content">
-            <p id="lives"></p>
-        </div>
-        
-        <div class="secret">
-            <p id="arraySecret"></p>
+        <div class="select">
+            <div class="select-card" id="programming">
+                <div class="select-card-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 256 256"><path fill="#000000" d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16ZM92.8 145.6a8 8 0 1 1-9.6 12.8l-32-24a8 8 0 0 1 0-12.8l32-24a8 8 0 0 1 9.6 12.8L69.33 128Zm58.89-71.4l-32 112a8 8 0 1 1-15.38-4.4l32-112a8 8 0 0 1 15.38 4.4Zm53.11 60.2l-32 24a8 8 0 0 1-9.6-12.8l23.47-17.6l-23.47-17.6a8 8 0 1 1 9.6-12.8l32 24a8 8 0 0 1 0 12.8Z"/></svg>
+                </div>
+
+                <div class="select-card-text"><h2>Programación</h2></div>
+            </div>
+
+            <div class="select-card" id="colors">
+                <div class="select-card-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 256 256"><path fill="#000000" d="M200.77 53.89A103.27 103.27 0 0 0 128 24h-1.07A104 104 0 0 0 24 128c0 43 26.58 79.06 69.36 94.17A32 32 0 0 0 136 192a16 16 0 0 1 16-16h46.21a31.81 31.81 0 0 0 31.2-24.88a104.43 104.43 0 0 0 2.59-24a103.28 103.28 0 0 0-31.23-73.23ZM84 168a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm0-56a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm44-24a12 12 0 1 1 12-12a12 12 0 0 1-12 12Zm44 24a12 12 0 1 1 12-12a12 12 0 0 1-12 12Z"/></svg>
+                </div>
+
+                <div class="select-card-text"><h2>Colores</h2></div>
+            </div>
+
+            <div class="select-card" id="food">
+                <div class="select-card-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 256 256"><path fill="#000000" d="M35.58 98.06a16 16 0 0 1-3.23-13.44C39.78 49.5 80 24 128 24s88.22 25.5 95.65 60.62A16 16 0 0 1 207.93 104H48.07a16 16 0 0 1-12.49-5.94Zm193.68 54.42l-41.13 15L151 152.57a8 8 0 0 0-5.94 0l-37 14.81L71 152.57a8 8 0 0 0-5.7-.09l-44 16a8 8 0 0 0 5.47 15L40 178.69V184a40 40 0 0 0 40 40h96a40 40 0 0 0 40-40v-9.67l18.73-6.81a8 8 0 1 0-5.47-15ZM24 136h208a8 8 0 0 0 0-16H24a8 8 0 0 0 0 16Z"/></svg>
+                </div>
+
+                <div class="select-card-text"><h2>Comida</h2></div>
+            </div>
         </div>
 
-
-        <div class="letter">
-            <label for="text"> Letra: </label>
-            <input type="text" autofocus name="text" id="letter-input" maxlength="1" onkeydown="if(event.key==='Enter'){document.querySelector('.letter-btn').click();}">
-            <div class="letter-btn">
-                <span>Intentar</span>
+        <div class="content hidden" id="content">
+            <div class="lives-content">
+                <p id="lives"></p>
+            </div>
+            
+            <div class="secret">
+                <p id="arraySecret"></p>
+            </div>
+    
+            <div class="letter">
+                <label for="text"> Letra: </label>
+                <input type="text" autofocus name="text" id="letter-input" maxlength="1" onkeydown="if(event.key==='Enter'){document.querySelector('.letter-btn').click();}">
+                <div class="letter-btn">
+                    <span>Intentar</span>
+                </div>
             </div>
         </div>
     </div>

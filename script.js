@@ -1,8 +1,8 @@
-const temas = [["error", "booleano", "riwi", "funcion", "string"], ["amarillo", "azul", "rojo", "verde", "morado", "blanco"], ["pizza", "hamburguesa", "lasaña", "salchipapas", "empanada", "buñuelo"]]
+const temas = [["error", "array", "riwi", "funcion", "string"], ["amarillo", "azul", "rojo", "verde", "morado", "blanco"], ["pizza", "hamburguesa", "lasaña", "salchipapas", "empanada", "buñuelo"]]
 let tema = 0;
 
-const select = document.querySelector(".select")
-const content = document. querySelector("#content")
+const select = document.querySelectorAll(".select");
+const content = document. querySelector("#content");
 
 const programming = document.querySelector("#programming");
 const colors = document.querySelector("#colors");
@@ -27,13 +27,16 @@ food.addEventListener("click", () => {
 });
 
 function hidden() {
-    select.classList.add("hidden")
+    select.forEach(a => {
+        a.classList.add("hidden");
+    });
+
     content.classList.remove("hidden")
 }
 
 function game() {
     const palabra = tema[Math.floor(Math.random() * tema.length)];
-    
+
     const palabraArray = palabra.split("");
     vidas = 6;
     correcto = false;
@@ -53,7 +56,6 @@ function game() {
     
         intento(letra);
     });
-    
     
     function intento(letra) {
         correcto = false;
@@ -75,13 +77,19 @@ function game() {
         };
     
         if (palabraArray.join("") == arraySecret.join("")) {
-            alert("Ganaste")
+            alert("Ganaste!!")
+            restart();
         };
         
         if (vidas == 0) {
-            alert("Perdiste bobo")
+            alert(`Perdiste :(\n\nLa palabra era: ${palabraArray.join(" ").toUpperCase()}`);
+            restart();
         };
     }
+}
+
+function restart() {
+    location.reload();
 }
 
 

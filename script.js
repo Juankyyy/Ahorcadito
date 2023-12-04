@@ -1,4 +1,4 @@
-const temas = [["error", "array", "riwi", "funcion", "string"], ["francia", "argentina", "japon", "alemania", "españa", "mexico", "rusia", "egipto", "suiza", "suecia"], ["pizza", "hamburguesa", "lasaña", "salchipapas", "empanada", "buñuelo"]]
+const temas = [["framework", "bug", "software", "holamundo", "frontend", "backend", "codigo"], ["francia", "argentina", "japon", "alemania", "españa", "mexico", "rusia", "egipto", "suiza", "suecia"], ["pizza", "chicharron", "natilla", "salchipapas", "empanada", "buñuelo", "arepa"]]
 let tema = 0;
 
 const select = document.querySelectorAll(".select");

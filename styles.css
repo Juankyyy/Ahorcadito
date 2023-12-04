@@ -53,17 +53,32 @@ p, label {
 }
 
 .letter-btn {
+    font-weight: bold;
     padding: 5px 10px;
     background-color: #000;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s all;
+}
+
+.letter-btn:hover {
+    background-color: #2d45ff;
+    box-shadow: 0px 0px 5px #2d45ff;
 }
 
 #letter-input {
-    padding: 5px 10px;
+    padding: 5px 0px;
+    text-align: center;
     font-size: 20px;
-    width: 20px;
+    width: 50px;
+    border: 2px solid #4e4e4e;
+    border-radius: 10px;
+    transition: 0.3s box-shadow;
+}
+
+#letter-input:hover {
+    box-shadow: 0px 0px 7px #4e4e4e;
 }
 
 .select {
@@ -87,6 +102,12 @@ p, label {
     fill: #fff;
     padding: 20px;
     border-radius: 10px;
+    transition: 0.3s box-shadow;
+}
+
+.select-card:hover {
+    /* transform: scale(1.2); */
+    box-shadow: 0px 0px 20px #000;
 }
 
 .select-card-img svg {

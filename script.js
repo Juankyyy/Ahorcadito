@@ -77,13 +77,19 @@ function game() {
         };
     
         if (palabraArray.join("") == arraySecret.join("")) {
-            alert("Ganaste!!")
-            restart();
+            alert("Ganaste!!");
+
+            setTimeout(() => {
+                restart();
+            }, 1000);
         };
         
         if (vidas == 0) {
             alert(`Perdiste :(\n\nLa palabra era: ${palabraArray.join(" ").toUpperCase()}`);
-            restart();
+            
+            setTimeout(() => {
+                restart();
+            }, 1000);
         };
     }
 };

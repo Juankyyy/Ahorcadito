@@ -58,6 +58,7 @@ p, label {
 }
 
 .select {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,4 +80,23 @@ p, label {
 
 .hidden {
     display: none;
+}
+
+.footerContent {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+}
+
+.footer {
+    font-weight: bold;
+    font-size: 20px;
+    color: #c4c4c4;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.footer:hover {
+    color: #000;
 }

@@ -91,31 +91,3 @@ function game() {
 function restart() {
     location.reload();
 }
-
-
-
-// while (vidas != 0) {
-//     let correcto = false;
-//     const letra = prompt(`${arraySecret.join(" ").toUpperCase()}\nTienes ${vidas} Vidas\nLetra: `);
-
-//     for (j = 0; j < palabra.length; j++) {
-//         if (palabra[j] == letra) {
-//             arraySecret[j] = letra;
-//             correcto = true;
-//         };
-//     };
-    
-//     if (!correcto) {
-//         vidas--;
-//     };
-
-//     if (palabraArray.join("") == arraySecret.join("")) {
-//         alert(`Has ganado!! :D\nLa palabra es: ${palabraArray.join(" ").toUpperCase()}`)
-//         break;
-//     };
-
-//     if (vidas == 0) {
-//         alert(`Has perdido! :(\n ${arraySecret.join(" ")}\nLa palabra era: ${palabraArray.join(" ").toUpperCase()}`)
-//         break;
-//     };
-// }

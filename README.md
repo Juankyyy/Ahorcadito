@@ -1,5 +1,5 @@
 # Ahorcadito
 
-### Es un ahorcadito y ya :D
+### Es un Ahorcadito que más quiere saber :D
 
 ### [Deployment](https://ahorcaditoo.vercel.app/)

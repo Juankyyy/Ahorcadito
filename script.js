@@ -1,11 +1,11 @@
-const temas = [["error", "array", "riwi", "funcion", "string"], ["amarillo", "azul", "rojo", "verde", "morado", "blanco"], ["pizza", "hamburguesa", "lasaña", "salchipapas", "empanada", "buñuelo"]]
+const temas = [["error", "array", "riwi", "funcion", "string"], ["francia", "argentina", "japon", "alemania", "españa", "mexico", "rusia", "egipto", "suiza", "suecia"], ["pizza", "hamburguesa", "lasaña", "salchipapas", "empanada", "buñuelo"]]
 let tema = 0;
 
 const select = document.querySelectorAll(".select");
 const content = document. querySelector("#content");
 
 const programming = document.querySelector("#programming");
-const colors = document.querySelector("#colors");
+const country = document.querySelector("#country");
 const food = document.querySelector("#food");
 
 programming.addEventListener("click", () => {
@@ -14,7 +14,7 @@ programming.addEventListener("click", () => {
     game();
 });
 
-colors.addEventListener("click", () => {
+country.addEventListener("click", () => {
     tema = temas[1];
     hidden();
     game();

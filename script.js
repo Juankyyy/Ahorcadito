@@ -27,8 +27,8 @@ food.addEventListener("click", () => {
 });
 
 function hidden() {
-    select.forEach(a => {
-        a.classList.add("hidden");
+    select.forEach(card => {
+        card.classList.add("hidden");
     });
 
     content.classList.remove("hidden")
@@ -86,8 +86,8 @@ function game() {
             restart();
         };
     }
-}
+};
 
 function restart() {
     location.reload();
-}
+};

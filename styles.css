@@ -78,6 +78,10 @@ p, label {
     border-radius: 10px;
 }
 
+.select-card-img svg {
+    width: 100px;
+}
+
 .hidden {
     display: none;
 }

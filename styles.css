@@ -23,6 +23,15 @@ p, label {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    height: 100dvh;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .content h1 {
@@ -85,7 +94,7 @@ p, label {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .footerContent {

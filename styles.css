@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100dvh;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.3s;
 }
 
 p, label {

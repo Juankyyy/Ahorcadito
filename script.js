@@ -9,10 +9,10 @@ const dark = document.querySelector("#darkMode");
 let theme;
 let count = 1
 asignarTema();
+
 dark.addEventListener("click", () => {
     count++;
 
-    console.log(count);
     if (count % 2 == 0) {
         theme = "dark";
     } else {
@@ -35,8 +35,6 @@ function asignarTema() {
         dark.style.backgroundColor = "#000";
         dark.style.fill = "#fff";
     }
-
-    console.log(localStorage.getItem("theme"));
 }
 
 const programming = document.querySelector("#programming");

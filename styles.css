@@ -92,7 +92,7 @@ p, label {
 }
 
 .select-card {
-    width: 200px;
+    width: 150px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,8 @@ p, label {
 }
 
 .select-card-img svg {
-    width: 100px;
+    width: 60px;
+    height: 60px;
 }
 
 .hidden {
